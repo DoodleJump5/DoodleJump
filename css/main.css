@@ -1,1 +1,81 @@
 @import url("common.css");
+
+div.wrap {
+  width: 100%;
+  height: 1080px;
+  background: black;
+}
+
+header.title {
+  width: 100%;
+  height: 70px;
+  background: red;
+}
+
+div.container {
+  width: 100%;
+  height: 1010px;
+  background: black;
+  position: relative;
+}
+
+div.container .pause {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  position: absolute;
+  right: 400px;
+  top: 110px;
+}
+
+div.container .score {
+  width: 520px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+}
+
+div.container .contents {
+  width: 520px;
+  height: 800px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.container .contents .bar {
+  width: 100px;
+  height: 40px;
+  background: green;
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.container .contents .bar.broken {
+  background: brown;
+}
+div.container .contents .bar.moving {
+  background: blue;
+}
+
+div.container .contents .bar.disappear {
+  background: green;
+}
+
+div.container .contents .bar.disposable {
+  background: gray;
+}
+
+#doodle {
+  background: orange;
+  width: 50px;
+  height: 80px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
